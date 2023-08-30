@@ -1,0 +1,18 @@
+create database BooksDB;
+use BooksDB;
+create table Books(title varchar(50),author varchar(50),genre varchar(50),publicationyear int,price int);
+insert into Books values("ABSALOM, ABSALOM","WILLIAM FAULKNER","Southern Gothic",1936,500);
+insert into Books values("A TIME TO KILL","JOHN GRISHAM","Legal thriller",1989,350);
+insert into Books values("THE HOUSE OF MIRTH","EDITH WHARTON","drama",1905,400);
+insert into Books values("EAST OF EDEN","JOHN STEINBECK","romance",1952,350);
+insert into Books values(" BRAVE NEW WORLD","ALDOUS HUXLEY","Science fiction",1932,750);
+insert into Books values(" PALE FIRE","VLADIMIR NABOKOV"," poetry and prose",1962,500);
+insert into Books values(" REMEMBRANCE OF THINGS PAST","MARCEL PROUST"," Fiction",1927,400);
+insert into Books values(" MOAB IS MY WASHPOT","STEPHEN FRY","Autobiography",1997,500);
+insert into Books values("NUMBER THE STARS","LOIS LOWRY","Historical fiction",1989,800);
+insert into Books values(" COLD COMFORT FARM","STELLA GIBBONS","Comedy",1932,300);
+select * from Books;
+select * from Books where title="NUMBER THE STARS";
+update Books set price=650 where price=800;
+delete from Books where title="A TIME TO KILL";
+select * from Books;
